@@ -1,0 +1,82 @@
+[
+    {
+        "referencia": "Ex.mira",
+        "designacao": "Optico",
+        "fisico": 120,
+        "primavera": 80,
+        "armazem": 1023,
+        "unidade": "UNIDADE"
+    },
+    {
+        "referencia": "Ex.alvo",
+        "designacao": "Papel",
+        "fisico": 500,
+        "primavera": 350,
+        "armazem": 4500,
+        "unidade": "PACOTE"
+    },
+    {
+        "referencia": "Ex.protetor",
+        "designacao": "Audivel",
+        "fisico": 240,
+        "primavera": 180,
+        "armazem": 3210,
+        "unidade": "PAR"
+    },
+    {
+        "referencia": "Ex.bipé",
+        "designacao": "Apoio",
+        "fisico": 60,
+        "primavera": 45,
+        "armazem": 1120,
+        "unidade": "UNIDADE"
+    },
+    {
+        "referencia": "Ex.bolsa",
+        "designacao": "Tática",
+        "fisico": 150,
+        "primavera": 100,
+        "armazem": 2200,
+        "unidade": "UNIDADE"
+    },
+    {
+        "referencia": "Ex.cinto",
+        "designacao": "Suporte",
+        "fisico": 300,
+        "primavera": 200,
+        "armazem": 3100,
+        "unidade": "UNIDADE"
+    },
+    {
+        "referencia": "Ex.lanterna",
+        "designacao": "Tática",
+        "fisico": 80,
+        "primavera": 55,
+        "armazem": 1500,
+        "unidade": "UNIDADE"
+    },
+    {
+        "referencia": "Ex.limpador",
+        "designacao": "Boresnake",
+        "fisico": 220,
+        "primavera": 180,
+        "armazem": 2500,
+        "unidade": "UNIDADE"
+    },
+    {
+        "referencia": "Ex.coletor",
+        "designacao": "Casca",
+        "fisico": 400,
+        "primavera": 320,
+        "armazem": 4300,
+        "unidade": "UNIDADE"
+    },
+    {
+        "referencia": "Ex.ocular",
+        "designacao": "Proteção",
+        "fisico": 180,
+        "primavera": 130,
+        "armazem": 2300,
+        "unidade": "PAR"
+    }
+]
