@@ -3,6 +3,7 @@ import Table from '../components/table';
 import Head from 'next/head';
 import Form from '../components/form';
 
+
 export default function Home() {
   return (
     <>

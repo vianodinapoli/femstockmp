@@ -1,6 +1,8 @@
 "use client";
-
+import { BiPlus } from "react-icons/bi";
 import { useReducer } from "react";
+import Success from '../components/success';
+import Bug from '../components/bug';
 
 export default function Form() {
   const formReducer = (state, event) => {
@@ -15,8 +17,14 @@ export default function Form() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formData);
+    // Ao tentar adicionar o forma vazio: se não tivermos nada no formulário formData, retorna este erro!
+
+    if(Object.keys(formData).length == 0) return console.log("Por favor, preencha os dados de forma correcta!")
+    console.log(formData); 
   };
+
+  if(Object.keys(formData).length > 0) return <Success message={"Artigo adicionado!"}/>;
+    // if (Object.keys(formData).length == 0) return <Bug message ={ Erro!}/>;
 
   return (
     <form className="grid lg:grid-cols-3 w-6/6 gap-4" onSubmit={handleSubmit}>
@@ -109,7 +117,7 @@ export default function Form() {
       </div>
       <hr />
       <button className="flex justify-center text-md w-2/6 bg-green-500 text-white px-4 py-2 border rounded-md hover:bg-gray-50 hover:border-green-500 hover:text-green-500">
-        Add
+        <span className="px-1"><BiPlus size={25}></BiPlus></span>Add
       </button>
     </form>
   );
