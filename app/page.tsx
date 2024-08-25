@@ -1,7 +1,7 @@
 import { BiPlus } from "react-icons/bi";
-import Table from '../components/table';
-import Head from 'next/head';
-import Form from '../components/form';
+import Table from "../components/table";
+import Head from "next/head";
+import Form from "../components/form";
 
 export default function Home() {
   return (
@@ -12,30 +12,30 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className='py-5'>
-        <h1 className='text-xl md:text-5xl text-center font-bold py-10'>
+      <main className="py-5">
+        <h1 className="text-xl md:text-5xl text-center font-bold py-10">
           MATERIAL EXISTENTE NOS PAIÓS FEM - DONDO
         </h1>
 
         <div className="container mx-auto flex justify-between py-10 border-b">
           <div className="flex gap-4">
-            <button className='flex bg-indigo-500 text-white px-4 py-2 border rounded-md hover:bg-gray-500 hover:border-indigo-500 hover:text-gray-800'>
+            <button className="flex bg-indigo-500 text-white px-4 py-2 border rounded-md hover:bg-gray-500 hover:border-indigo-500 hover:text-gray-800">
               <BiPlus size={23} />
-              <span className='px-1'></span>
+              <span className="px-1"></span>
               Adicionar artigo
             </button>
             <span>Última Actualização em 20/08/2024: 17:46min</span>
           </div>
         </div>
 
-        {/* formulario */}
-
+        {/* Formulário */}
         <div className="container mx-auto py-3">
-        <Form></Form>
+          <Form />
         </div>
+
         {/* Seção para tabela */}
         <div className="container mx-auto">
-          <Table></Table>
+          <Table />
         </div>
       </main>
     </>

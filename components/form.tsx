@@ -3,17 +3,16 @@
 import { useReducer } from "react";
 
 export default function Form() {
-  const formReducer = (state, event) => {
+  const formReducer = (state: any, event: { target: { name: any; value: any } }) => {
     return {
       ...state,
       [event.target.name]: event.target.value,
-      // name: event.target.value
     };
   };
 
   const [formData, setFormData] = useReducer(formReducer, {});
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: { preventDefault: () => void }) => {
     e.preventDefault();
     console.log(formData);
   };
@@ -64,7 +63,7 @@ export default function Form() {
         <input
           type="text"
           onChange={setFormData}
-          name="aramzem"
+          name="armazem"
           className="border w-full px-5 py-3 focus:outline-none rounded-md"
           placeholder="Armazém"
         />
@@ -107,7 +106,9 @@ export default function Form() {
           Inactive
         </label>
       </div>
+
       <hr />
+
       <button className="flex justify-center text-md w-2/6 bg-green-500 text-white px-4 py-2 border rounded-md hover:bg-gray-50 hover:border-green-500 hover:text-green-500">
         Add
       </button>
