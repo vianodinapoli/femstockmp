@@ -23,9 +23,9 @@ export default function Table() {
           <th className="px-12" py-2>
             <span className="text-gray-300">Unidade</span>
           </th>
-          <th className="px-12" py-2>
+          {/* <th className="px-12" py-2>
             <span className="text-gray-300">Status</span>
-          </th>
+          </th> */}
           <th className="px-12" py-2>
             <span className="text-gray-300">Ações</span>
           </th>
@@ -64,14 +64,14 @@ function Tr({referencia, designacao, fisico, primavera, armazem, unidade, status
     <td className="px-12 py-2">
       <span>{unidade || "N/A"}</span>
     </td>
-    <td className="px-12 py-2">
+    {/* <td className="px-12 py-2">
       <button className="cursor">
         {" "}
         <span className="bg-green-500 text-white px-5 py-1 rounded-full">
         {status || "N/A"}
         </span>
       </button>
-    </td>
+    </td> */}
 
     <td className="px-12 py-2 flex justify-around gap-5">
       <button className="cursor">
